@@ -7,14 +7,13 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:layout_height="58dp"
         android:background="@color/colorPrimary"
         android:elevation="12dp"
         app:tabIndicator="@color/white"
-        app:tabSelectedTextColor="@color/lightGrey"
+        app:tabSelectedTextColor="@color/white"
         app:tabMaxWidth="0dp"
         app:tabGravity="fill"
         app:tabMode="fixed"

@@ -2,6 +2,7 @@ package com.example.whatsappclone;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.whatsappclone.Adapter.FragmentsAdapter;
 import com.example.whatsappclone.databinding.ActivityMainBinding;
+import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
 
 
@@ -19,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
     FirebaseAuth mAuth;
+    private ViewPager myViewPager;
+    private TabLayout myTabLayout;
+    private FragmentsAdapter fragmentsAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +33,11 @@ public class MainActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        binding.viewpager.setAdapter(new FragmentsAdapter(getSupportFragmentManager()));
-        binding.tabLayout.setupWithViewPager(binding.viewpager);
+        myViewPager = (ViewPager) findViewById(R.id.viewpager);
+        fragmentsAdapter=new FragmentsAdapter(getSupportFragmentManager());
+        myViewPager.setAdapter(fragmentsAdapter);
+        myTabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        myTabLayout.setupWithViewPager(myViewPager);
 
     }
 
