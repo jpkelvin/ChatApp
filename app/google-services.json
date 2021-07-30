@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "890178501991",
+    "project_id": "chatapplication-3509a",
+    "storage_bucket": "chatapplication-3509a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890178501991:android:1c9789bde0b048fe5743c2",
+        "android_client_info": {
+          "package_name": "com.example.whatsappclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890178501991-j8vh28aasf261q36034n0rt31hb3rki6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU8xKXLVuVv5C0cRjM9Rd_eL-v6xi0LiA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890178501991-j8vh28aasf261q36034n0rt31hb3rki6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
