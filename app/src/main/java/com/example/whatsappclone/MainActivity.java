@@ -56,7 +56,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case  R.id.groupChat:
-                Toast.makeText(this, "Group Chat is started.", Toast.LENGTH_SHORT).show();
+                ///Toast.makeText(this, "Group Chat is started.", Toast.LENGTH_SHORT).show();
+                Intent intent1 = new Intent(MainActivity.this,GroupChatActivity.class);
+                startActivity(intent1);
                 break;
 
             case  R.id.logout:
