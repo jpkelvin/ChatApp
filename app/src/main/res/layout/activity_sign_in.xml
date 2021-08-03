@@ -36,7 +36,7 @@
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:padding="9dp"
+            android:padding="20dp"
             android:textColor="@color/white"
             android:textColorHint="@color/chatbackground"
             >
@@ -51,7 +51,7 @@
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
-            android:padding="9dp"
+            android:padding="20dp"
             android:textColor="@color/white"
             android:textColorHint="@color/chatbackground"
             >
@@ -79,8 +79,9 @@
             android:layout_marginTop="10dp"
             android:padding="15dp"
             android:text="Sign In"
+            android:textSize="18sp"
             android:textAllCaps="false"
-            app:backgroundTint="@color/design_default_color_secondary_variant"
+            app:backgroundTint="#6C6464"
             app:cornerRadius="8dp"
             >
 
@@ -121,7 +122,7 @@
                 android:text="Facebook"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
-                app:backgroundTint="@color/fb_color"
+                app:backgroundTint="#21499F"
                 app:cornerRadius="8dp">
 
             </Button>
